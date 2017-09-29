@@ -1,0 +1,35 @@
+@media print {
+    body {
+        width: 100%;
+    }
+    section:first-child {
+        float: left;
+        width: 39%;
+    }
+    section {
+        float: right;
+        width: 60%;
+    }
+    section::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .slider {
+        width: 256px;
+    }
+    .slide {
+        display: block!important;
+        margin-bottom: 20px;
+    }
+    .prev,
+    .next {
+        display: none;
+    }
+    .dot-wrapper {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}

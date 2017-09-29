@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+    color: #757575;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0 0;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+a {
+    color: #757575;
+    font-weight: bold;
+}
+
+
+/* .fa-print:before{
+    color: #54aeb6;
+}
+
+.print-icon {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+} */
+
+main {
+    width: 100%;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.main-inner {
+    padding: 0 16px;
+}
+
+section {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.picture-wrapper {
+    position: relative;
+}
+
+.picture-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+.name {
+    position: absolute;
+    bottom: -7px;
+    left: 16px;
+    color: #000;
+    font-size: 22px;
+}
+
+.container {
+    padding: 10px 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+ul a {
+    font-weight: normal;
+}
+
+.resources {
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.resources::before {
+    content: "***";
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #eee;
+    top: -11px;
+    background: white;
+    padding: 0 10px;
+    left: 42%;
+}
+
+.resources h2 {
+    margin-top: -20px;
+}
+
+.resources li {
+    padding: 5px 0;
+}
+
+.resources ul li:not(:last-child):after {
+    content: "•";
+    margin: 0 2px 0 4px;
+}
+
+.tools-list {
+    display: inline;
+}
+
+.tools-list li {
+    padding: 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.tools-list li:not(:last-child):after,
+.skills-sublist li:not(:last-child):after {
+    content: '•';
+    margin: 0 2px 0 4px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 13px;
+    font-style: italic;
+}
+
+ol {
+    padding: 5px 0 5px 20px;
+}
+
+ol li {
+    list-style-type: disc;
+}
+
+.skills-list {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.fa {
+    vertical-align: middle;
+    color: #54aeb6;
+}
+
+.fa-map-marker:before,
+.fa-mobile:before {
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.fa-envelope-o:before {
+    padding-right: 15px;
+}
+
+.info {
+    padding: 10px 0;
+}
+
+.info:nth-child(2) {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.date-icon {
+    color: #54aeb6;
+    font-size: 13px;
+}
+
+.fa-calendar:before {
+    padding-right: 10px;
+    vertical-align: super;
+    color: #54aeb6;
+    font-size: 13px;
+}
+
+.fa-certificate::before,
+.fa-graduation-cap:before,
+.fa-briefcase:before,
+.fa-asterisk:before,
+.fa-code:before {
+    padding-right: 15px;
+}
+
+.fa-calendar:before {
+    padding-right: 10px;
+    vertical-align: super;
+    color: #54aeb6;
+    font-size: 13px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slider {
+    width: 256px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider li a {
+    font-size: 0;
+    display: block;
+}
+
+.slide {
+    display: block;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(3) {
+    display: block;
+}
+
+.dot-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 1px solid #54aeb6;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background: #54aeb6;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #54aeb6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+footer {
+    background: #54aeb6;
+    text-align: center;
+}
+
+.footer-inner {
+    padding: 10px 0;
+}
+
+.fa-github {
+    color: #757575;
+}
+
+.fa-github:hover {
+    color: #fff;
+}

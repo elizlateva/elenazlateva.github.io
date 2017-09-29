@@ -1,0 +1,21 @@
+@media (min-width: 767px) {
+    section:first-child {
+        float: left;
+        width: 38%;
+    }
+    section {
+        float: right;
+        width: 60%;
+    }
+    section::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    section {
+        margin: 8px 0;
+    }
+    .slider {
+        width: 409px;
+    }
+}
