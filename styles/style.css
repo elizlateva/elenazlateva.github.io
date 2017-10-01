@@ -29,7 +29,8 @@ h2 {
     padding: 10px 0 0;
 }
 
-p {
+p,
+a {
     font-size: 15px;
     line-height: 1.5;
     padding: 5px 0;
@@ -38,6 +39,11 @@ p {
 a {
     color: #757575;
     font-weight: bold;
+}
+
+.phone,
+.email {
+    font-weight: normal;
 }
 
 
@@ -79,8 +85,8 @@ section {
     position: absolute;
     bottom: -7px;
     left: 16px;
-    color: #000;
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .container {
