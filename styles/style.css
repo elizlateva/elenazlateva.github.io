@@ -31,19 +31,21 @@ h2 {
 
 p,
 a {
-    font-size: 15px;
-    line-height: 1.5;
     padding: 5px 0;
 }
 
 a {
     color: #757575;
-    font-weight: bold;
 }
 
 .phone,
 .email {
     font-weight: normal;
+}
+
+.phone:hover,
+.email:hover {
+    color: #555;
 }
 
 
@@ -97,12 +99,10 @@ section {
 
 ul li {
     display: inline-block;
-    font-size: 15px;
-    line-height: 1.5;
 }
 
-ul a {
-    font-weight: normal;
+.resources ul li a:hover {
+    color: #555;
 }
 
 .resources {
@@ -163,6 +163,10 @@ ol {
 
 ol li {
     list-style-type: disc;
+}
+
+ol li a:hover {
+    color: #555;
 }
 
 .skills-list {
