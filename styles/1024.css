@@ -1,4 +1,9 @@
 @media(min-width: 1023px) {
+    header {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
     main {
         width: 980px;
         margin: 16px auto;
